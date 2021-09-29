@@ -1,0 +1,19 @@
+#banner{
+	width: 100%;
+	min-height: 100vh;
+
+	background: rgb(120, 120, 200);
+	/*background: var(--default-background);*/
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#banner > div{
+	flex: 1 1 250px;
+	display: grid;
+	place-items: center;
+	/*padding: 20px;*/
+	font-size: 30px;
+}

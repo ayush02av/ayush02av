@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+  --default-background: #F3F7F2;
+  --default-color: #8E1DAB;
+
+  --primary-color-1: #BAD9B5;
+  --primary-color-2: #383D3B;
+
+  --secondary-color-1: #FCAA67;
+  --secondary-color-2: #6F1A07;
+
+  --helper-color-1: #20F7DB;
+  --helper-color-2: #A8081E;/*#A8081E;*/
+  --box-shadow-color: rgb(240, 240, 240, 0.2);
+}
+
+
+*{
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Roboto;
+
+	overflow-x: hidden;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+.heading{
+	display: block;
+	font-weight: bold;
+	font-family: Satisfy;
+}
+
+.brief-heading{
+	display: block;
+	font-style: italic;
+	/*font-family: Satisfy;*/
+}
+
+.text{
+	display: block;
+	font-size: 25px;
+	font-family: Roboto;
+}
+
+#body{
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+#top-nav{
+	position: fixed;
+	top: 0;
+  display: grid;
+  grid-template-columns: minmax(200px, 40%) 1fr;
+	background: rgb(120, 120, 200);
+  color: var(--primary-color-1);
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#top-nav li{margin: 0 10px; cursor: pointer; text-align: center;}
+
+#top-nav li:hover{background: rgb(50, 50, 50, 0.1); }
+
+#top-nav-right{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#burger-button{ 
+  display: none;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+  #top-nav{ display: inline-flex; justify-content: center; }
+  #burger-button{ display: initial; }
+  #top-nav-right{ display: none; position: absolute; right: 0; top: 50px; background: white; padding: 0 30px; }
+}
