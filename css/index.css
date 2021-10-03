@@ -14,6 +14,6 @@
 	flex: 1 1 250px;
 	display: grid;
 	place-items: center;
-	/*padding: 20px;*/
-	font-size: 30px;
+	font-size: 70px;
+	color: whitesmoke;
 }
