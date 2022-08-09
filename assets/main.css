@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    /* cursor: none; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#logger {
+    position: absolute;
+    top: 0;
+    background-color: red;
+    color: black;
+}
+
+#cursor {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 5px;
+    cursor: inherit;
+}
+
+#sub-cursor {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: inherit;
+}
+
+header {
+    background-color: #1E1E24;
+    color: whitesmoke;
+    height: 80px;
+    top: 0;
+    position: sticky;
+    line-height: 80px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#main {
+    background-color: #1C1C1C;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+#main>#banner {
+    background-color: #B3001B;
+    width: calc(100% - 100px);
+    padding: 50px;
+    text-align: center;
+    /* height: 100vh; */
+    /* color: #B3001B; */
+    /* display: none; */
+}
+
+@media screen and (max-width: 600px) {
+    #main>#banner {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+}
+
+#main>#banner>#about {
+    margin: 0 15%;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    #main>#banner>#about {
+        margin: 0;
+    }
+}
+
+#main>#banner>#about::first-line {
+    font-size: xx-large;
+}
+
+#main>#banner>#goto-links {
+    width: 50%;
+    margin: 0 25%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main>#banner>#goto-links>.goto-link {
+    margin: 5px 30px;
+    background-color: #1C1C1C;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#main>#banner>#goto-links>.goto-link:hover {
+    background-color: wheat;
+    color: #1C1C1C;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    #main>#banner>#goto-links {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main>#banner>#goto-links>.goto-link {
+        margin: 0 10px;
+        padding: 5px;
+    }
+}
+
+footer {
+    background-color: #2D2A32;
+    color: whitesmoke;
+    height: 100vh;
+}
