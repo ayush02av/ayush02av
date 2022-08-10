@@ -28,6 +28,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #logger {
     position: absolute;
     top: 0;
@@ -73,9 +77,10 @@ header {
     width: calc(100% - 100px);
     padding: 50px;
     text-align: center;
-    /* height: 100vh; */
-    /* color: #B3001B; */
-    /* display: none; */
+}
+
+#main .heading {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -133,6 +138,37 @@ header {
         margin: 0 10px;
         padding: 5px;
     }
+}
+
+#main>#portfolio {
+    padding: 30px;
+}
+
+#main>#portfolio>.portfolio-section {
+    padding-top: 100px;
+    margin-top: 20px;
+}
+
+#main>#portfolio>.portfolio-section>.portfolio-section-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#main>#portfolio>.portfolio-section>.portfolio-section-data>.portfolio-section-data-element {
+    background-color: wheat;
+    color: #1C1C1C;
+    padding: 10px;
+    border-radius: 3px;
+    flex: 0 1 300px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+#main .project-link {
+    text-decoration: underline;
+    font-style: italic;
 }
 
 footer {
